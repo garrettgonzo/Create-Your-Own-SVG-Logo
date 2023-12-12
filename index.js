@@ -3,7 +3,7 @@ const fs = require("fs")
 const path = require("path")
 const generateSVG = require("./utils/generateMarkdown")
 const mediaArray = ["Triangle", "Circle", "Square"];
-const colorArray = ["Blue", "Green", "Red"]
+const colorArray = ["White", "Green", "Red", "Blue"]
 const questions = [
     {
       type: 'input',
@@ -11,17 +11,17 @@ const questions = [
       message: "What's your Logo's name? (Enter three chracters)",
     },
     {
-      name: 'color',
+      name: 'shape',
       type: "list",
-      message: "What Color do you want?",
-      choices: colorArray,
+      message: "What shape do you want?",
+      choices: mediaArray,
       default: "Medium",
     },
     {
-      name: 'shape',
+      name: 'color',
       type: "list",
-      message: "What Shape do you want?",
-      choices: mediaArray,
+      message: "What shape color do you want?",
+      choices: colorArray,
       default: "Medium",
     },
     {
@@ -34,10 +34,10 @@ const questions = [
   ];
   inquirer.prompt(questions).then(answers => {
     // console.log(`Created ${answers.name}!`);
-    console.log(answers);
+    // console.log(answers);
     const svg = generateSVG(answers)
     // console.log(svg)
-    fs.writeFile(path.join(__dirname, "MyLogo.svg"), ` ${svg} `, function(err){
+    fs.writeFile(path.join(__dirname, "example.svg"), ` ${svg} `, function(err){
         if(err) throw err
         // console.log(answers.name);
       //   console.log("sucess")
