@@ -44,11 +44,3 @@ const questions = [
     })
   //   console.log(answers);
   });
-
-
-
-//   function add(a,b){
-//     return a + b
-//   }
-// const myNum = 55
-//   const total = add(myNum,7)
