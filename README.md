@@ -30,4 +30,4 @@ WHEN I created an orginized video on how it all works
 
 ## Walkthrough Video
 
-[![Video](<./Screenshot%20(1171).jpg>)](https://www.youtube.com/watch?v=aoVOHK3DzGw)
+[![Video](<./Screenshot%20(1171).jpg>)](https://www.youtube.com/watch?v=22keyrmrrqc)
