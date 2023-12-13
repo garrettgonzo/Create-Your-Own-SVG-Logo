@@ -29,3 +29,5 @@ When I have created working and easy to understand prompts
 WHEN I created an orginized video on how it all works
 
 ## Walkthrough Video
+
+[![Video](<./Screenshot%20(1171).jpg>)](https://www.youtube.com/watch?v=aoVOHK3DzGw)
